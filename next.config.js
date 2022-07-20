@@ -1,3 +1,8 @@
 module.exports = {
-	reactStrictMode: true
+	basePath: '',
+	assetPrefix: '/',
+	// reactStrictMode: true,
+	env: {
+		BACKEND_URL: '/',
+	}
 }
