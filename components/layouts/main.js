@@ -7,7 +7,7 @@ const Main = ({ children, router }) => {
       <Head>
         <title>Khalid EL GAMOUS</title>
       </Head>
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.lg" pt={14}>
         {children}
       </Container>
     </Box>
