@@ -12,7 +12,9 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  keep_history: true
   local_dir: out
   on:
-    branch: gh-pages
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^(master|main)$
 
