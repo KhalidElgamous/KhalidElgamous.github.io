@@ -1,4 +1,6 @@
 
+const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
+
 module.exports = {
-	reactStrictMode: true
-}
+  assetPrefix: ghPages ? '/KhalidElgamous.github.io/' : ''
+};
