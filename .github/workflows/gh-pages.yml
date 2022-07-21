@@ -15,7 +15,6 @@ jobs:
       - name: Install and Build
         uses: actions/setup-node@v1
       - run: npm ci
-      - run: npm cache clean --force
       - run: npm install
       - run: npm run build
       - run: npm run export
