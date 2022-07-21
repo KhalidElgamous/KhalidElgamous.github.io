@@ -6,12 +6,12 @@ const Page = () => {
   return (
     <Container>
       <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center">
-        Hello, I&apos;m a data scientist based in Morocco! 
+        Hello, I&apos;m a data scientist based in Morocco
       </Box>
       <Box display={{md: 'flex'}}></Box>
       <Box flexGrow={1}>
         <Heading as="h2" variant="page-title">
-          Khalid EL GAMOUS
+          Khalid ELGAMOUS
         </Heading>
       </Box>
     </Container>

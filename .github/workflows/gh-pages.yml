@@ -24,12 +24,12 @@ jobs:
         env:
           CI: true
           DEPLOY_TARGET: gh-pages
-      - run: touch portfolio/.nojekyll
+      - run: touch out/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: portfolio
+          FOLDER: out
           CLEAN: true
