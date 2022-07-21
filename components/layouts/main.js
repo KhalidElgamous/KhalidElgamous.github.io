@@ -5,7 +5,7 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pd={8}>
       <Head>
-        <title>Khalid EL GAMOUS</title>
+        <title>Khalid !</title>
       </Head>
       <Container maxW="container.lg" pt={14}>
         {children}
