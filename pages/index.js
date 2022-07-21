@@ -1,11 +1,11 @@
 
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 
 const Page = () => {
   return (
-    <Container>
-      <Box borderRadius="lg" bg="gray" p={3} mb={6} align="center">
+    <>
+      <Box borderRadius="lg" p={3} mb={6} align="center">
         Hello, I&apos;m a data scientist based in Morocco
       </Box>
       <Box display={{md: 'flex'}}></Box>
@@ -14,7 +14,7 @@ const Page = () => {
           Khalid ELGAMOUS
         </Heading>
       </Box>
-    </Container>
+    </>
   )
 }
 
