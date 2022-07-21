@@ -1,6 +1,10 @@
 
-const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
+/**
+ * @type {import('next').NextConfig}
+ */
 
-module.exports = {
-  assetPrefix: ghPages ? '/KhalidElgamous.github.io/' : ''
-};
+const nextConfig = {
+  /* config options here */
+}
+
+export default nextConfig
