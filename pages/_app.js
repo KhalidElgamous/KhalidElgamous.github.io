@@ -1,18 +1,22 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import Layout from '../components/layouts/main'
-// import Fonts from '../components/fonts'
-import theme from '../lib/theme'
-// import { AnimatePresence } from 'framer-motion'
 
-function Website({ Component, pageProps, router }) {
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+
+// import theme from '../lib/theme';
+
+const colors = {
+  brand: {
+    900: '#1a365d',
+    800: '#153e75',
+    700: '#2a69ac',
+  },
+}
+
+const theme = extendTheme({ colors })
+
+function Website({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      {/* <Fonts /> */}
-      <Layout router={router}>
-        {/* <AnimatePresence exitBeforeEnter initial={true}> */}
-          <Component {...pageProps} key={router.route} />
-        {/* </AnimatePresence> */}
-      </Layout>
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
