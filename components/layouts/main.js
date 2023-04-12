@@ -1,24 +1,16 @@
 import Head from "next/head";
-import {
-  Box,
-  Container
-} from "@chakra-ui/react";
 
-import Navbar from '../navbar.js';
-
-const Main = ({ children, router }) => {
+const Main = ({ children }) => {
   return (
-    <Box as="main" pd={8}>
+    <>
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
         <title>Khalid Elgamous</title>
       </Head>
-      <Navbar path={router.asPath} />
-      <Container maxW="container.sm" pt={14}>
-        {children}
-      </Container>
-    </Box>
+      {children}
+    </>
   )
 }
 
