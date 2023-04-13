@@ -8,7 +8,7 @@ const Page = () => {
         <a href="#" className="logo">K. EL GAMOUS</a>
         <i className='bx bx-menu' id="menu-icon"></i>
         <nav className="navbar">
-          <a href="#home" class="active">Home</a>
+          <a href="#home" className="active">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
