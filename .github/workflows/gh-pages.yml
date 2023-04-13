@@ -28,7 +28,7 @@ jobs:
           DEPLOY_TARGET: gh-pages
       - run: touch out/.nojekyll
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
