@@ -1,13 +1,11 @@
 {
   "name": "khalidelgamous.github.io",
   "version": "1.0.0",
-  "homepage": "https://khalidelgamous.github.io/",
   "description": "Khalid's portfolio",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "export": "next export",
-    "deploy": "gh-pages -d out",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
