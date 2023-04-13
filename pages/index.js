@@ -5,7 +5,7 @@ const Page = () => {
     <>
 
       <header className="header">
-        <a href="#" className="logo">K. EL GAMOUS</a>
+        <a href="#" className="logo">K.ELGAMOUS</a>
         <i className='bx bx-menu' id="menu-icon"></i>
         <nav className="navbar">
           <a href="#home" className="active">Home</a>
