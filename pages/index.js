@@ -31,7 +31,7 @@ const Page = () => {
           <a href="#" className="btn">Download CV</a>
         </div>
         <div className="home-image">
-          <img src="https://avatars.githubusercontent.com/u/5404735?v=4" alt="K.ELGAMOUS" />
+            {#<img src="" alt="K.ELGAMOUS" />#}
         </div>
       </section>
 
