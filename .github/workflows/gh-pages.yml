@@ -16,9 +16,12 @@ jobs:
           persist-credentials: false
       - name: Install and Build
         # uses: actions/setup-node@v1
-        uses: actions/setup-node@v3
+        # uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          # node-version: 14
+          node-version: 20
+          cache: npm
       - run: npm ci
       - run: npm install
       - run: npm run build
