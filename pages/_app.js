@@ -1,5 +1,5 @@
 
-import Layout from '../components/layouts/main';
+import Layout from '../components/layout';
 
 import './style.css';
 
