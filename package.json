@@ -1,11 +1,13 @@
 {
   "name": "khalidelgamous.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "homepage": "https://khalidelgamous.github.io/",
   "description": "Khalid's portfolio",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "export": "next export",
+    "deploy": "gh-pages -d out",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
@@ -13,8 +15,6 @@
   "author": "Khalid EL GAMOUS<khalidelgamous1@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.1",
-    "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
     "framer-motion": "^5.3.1",
