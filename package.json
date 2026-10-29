@@ -5,7 +5,7 @@
   "description": "Khalid's portfolio",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build && gh-pages -d out --nojekyll",
+    "build": "next build",
     "export": "next export",
     "deploy": "gh-pages -d out",
     "prettier": "prettier -write .",
