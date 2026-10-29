@@ -7,7 +7,7 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "export": "next export",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -t -u \"github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>\"",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
