@@ -346,6 +346,13 @@
       "submit": {
         "label": "Dispatch Secure Transmission",
         "icon": "fa-paper-plane"
+      },
+      "fromName": "Portfolio Contact Form",
+      "status": {
+        "sending": "Sending...",
+        "success": "Message sent. Thank you, I'll get back to you soon.",
+        "error": "Something went wrong. Please try again, or email me directly.",
+        "captcha": "Please complete the captcha first."
       }
     },
     "details": {
