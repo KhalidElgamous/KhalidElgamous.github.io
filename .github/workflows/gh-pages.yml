@@ -49,11 +49,6 @@ jobs:
           ls next.config.* || echo "no next.config found"
           ls -la out || echo "out/ does NOT exist"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
