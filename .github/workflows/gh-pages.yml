@@ -28,21 +28,18 @@ jobs:
           # node-version: 14
           node-version: 22
           cache: npm
-      
-      # - run: npm ci
-      # - run: npm install
-      # - run: npm run build
-      # - run: npm run export
-      #   env:
-      #     CI: true
-      #     DEPLOY_TARGET: gh-pages
-      # - run: touch out/.nojekyll
 
       - name: Install dependencies
         run: npm ci
+      - run: npm install
 
       - name: Build
         run: npm run build      # runs `next build`, output goes to ./out
+      - run: npm run export
+        env:
+          CI: true
+          DEPLOY_TARGET: gh-pages
+      - run: touch out/.nojekyll
 
       - name: Debug - did the build create out/?
         run: |
