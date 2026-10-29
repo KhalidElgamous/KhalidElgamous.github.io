@@ -2,6 +2,10 @@ import Section from "../ui/Section";
 import Button from "../ui/Button";
 import Icon from "../ui/Icon";
 
+// On GitHub Pages the site lives under /<repo-name>, so plain <a href> paths need that prefix.
+// NEXT_PUBLIC_BASE_PATH is the same value as basePath in next.config (empty when not set).
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 // The resume button points at an existing PDF served from /public (path set in data/portfolio.json).
 const Hero = ({ hero, resume }) => (
   <Section
@@ -24,7 +28,7 @@ const Hero = ({ hero, resume }) => (
           {hero.primaryAction.label} <Icon name={hero.primaryAction.icon} />
         </Button>
         <Button
-          href={resume.file}
+          href={`${basePath}${resume.file}`}
           download={resume.downloadName}
           variant="secondary"
         >
@@ -35,19 +39,10 @@ const Hero = ({ hero, resume }) => (
 
     <div className="relative flex justify-center md:flex-[0.8]">
       <div className="flex h-[320px] w-[260px] items-center justify-center overflow-hidden rounded-3xl border border-line bg-[image:linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] p-5 shadow-[0_30px_60px_rgba(0,0,0,0.4)] md:h-[352px] md:w-[288px] xl:h-[440px] xl:w-[360px]">
-        {/* <Icon
+        <Icon
           name={hero.displayIcon}
           className="bg-[image:var(--gradient-accent)] bg-clip-text text-[96px] text-transparent opacity-80 md:text-[112px] xl:text-[140px]"
-        /> */}
-        <object
-          type="image/svg+xml"
-          data="bigdata.svg"
-          width="100%"
-          height="100%"
-          aria-label="Big Data Logo"
-        >
-          Your browser does not support SVGs.
-        </object>
+        />
       </div>
     </div>
   </Section>

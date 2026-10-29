@@ -1,7 +1,7 @@
 import { cn } from "../../lib/cn";
 
 const base =
-  "inline-flex cursor-pointer items-center justify-center gap-2.5 text-center rounded-xl px-6 py-3 text-[15px] xl:px-8 xl:py-3.5";
+  "inline-flex cursor-pointer items-center justify-center gap-2.5 text-center disabled:pointer-events-none disabled:opacity-60 rounded-xl px-6 py-3 text-[15px] xl:px-8 xl:py-3.5";
 
 const variants = {
   primary:
