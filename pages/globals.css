@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import 'tailwindcss';
+
+/* --- BRAND DESIGN TOKENS --- */
+:root {
+  --bg-main: #0b0f17;
+  --bg-surface: #131a26;
+  --bg-card: rgba(25, 34, 50, 0.45);
+  --border-color: rgba(255, 255, 255, 0.07);
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --accent: #00f2fe;
+  --accent-glow: rgba(0, 242, 254, 0.15);
+  --gradient-text: linear-gradient(135deg, #fff 0%, #9ca3af 100%);
+  --gradient-accent: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
+/*
+  Tailwind color names used in the components:
+  bg-main, bg-surface, bg-card, border-line, text-fg, text-muted, text-accent
+*/
+@theme inline {
+  --color-main: var(--bg-main);
+  --color-surface: var(--bg-surface);
+  --color-card: var(--bg-card);
+  --color-line: var(--border-color);
+  --color-fg: var(--text-primary);
+  --color-muted: var(--text-secondary);
+  --color-accent: var(--accent);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* Tailwind sets 1.5; the original design used the font's normal line height */
+    line-height: normal;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}

@@ -1,7 +1,6 @@
-
 import Layout from '../components/layout';
 
-import './style.css';
+import './globals.css';
 
 function Website({ Component, pageProps }) {
   return (

@@ -1,29 +1,56 @@
+import Section from "../ui/Section";
+import Button from "../ui/Button";
 import Icon from "../ui/Icon";
 
 // The resume button points at an existing PDF served from /public (path set in data/portfolio.json).
 const Hero = ({ hero, resume }) => (
-  <section className="hero" id="home">
-    <div className="hero-content">
-      <h3>{hero.eyebrow}</h3>
-      <h1>{hero.name}</h1>
-      <p>{hero.summary}</p>
+  <Section
+    id="home"
+    className="z-[1] flex flex-col-reverse items-center justify-center gap-10 text-center md:flex-row md:justify-between md:gap-6 md:text-left xl:gap-[60px]"
+  >
+    <div className="w-full md:flex-[1.2]">
+      <h3 className="mb-2.5 text-[14px] font-semibold uppercase tracking-[2px] text-accent xl:text-[18px]">
+        {hero.eyebrow}
+      </h3>
+      <h1 className="mb-4 bg-[image:linear-gradient(to_right,#fff,#9ca3af)] bg-clip-text text-[40px] font-extrabold leading-[1.25] tracking-[-1.5px] text-transparent md:text-[51px] xl:mb-5 xl:text-[64px]">
+        {hero.name}
+      </h1>
+      <p className="mb-8 text-[16px] leading-[1.7] text-muted xl:mb-10 xl:text-[18px]">
+        {hero.summary}
+      </p>
 
-      <div className="hero-actions">
-        <a href={hero.primaryAction.href} className="btn-premium">
+      <div className="flex flex-wrap items-center justify-center gap-4 md:justify-start xl:gap-5">
+        <Button href={hero.primaryAction.href}>
           {hero.primaryAction.label} <Icon name={hero.primaryAction.icon} />
-        </a>
-        <a href={resume.file} download={resume.downloadName} className="btn-secondary">
+        </Button>
+        <Button
+          href={resume.file}
+          download={resume.downloadName}
+          variant="secondary"
+        >
           <Icon name={resume.icon} /> {resume.label}
-        </a>
+        </Button>
       </div>
     </div>
 
-    <div className="hero-display">
-      <div className="profile-card-wrapper">
-        <Icon name={hero.displayIcon} />
+    <div className="relative flex justify-center md:flex-[0.8]">
+      <div className="flex h-[320px] w-[260px] items-center justify-center overflow-hidden rounded-3xl border border-line bg-[image:linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] p-5 shadow-[0_30px_60px_rgba(0,0,0,0.4)] md:h-[352px] md:w-[288px] xl:h-[440px] xl:w-[360px]">
+        {/* <Icon
+          name={hero.displayIcon}
+          className="bg-[image:var(--gradient-accent)] bg-clip-text text-[96px] text-transparent opacity-80 md:text-[112px] xl:text-[140px]"
+        /> */}
+        <object
+          type="image/svg+xml"
+          data="bigdata.svg"
+          width="100%"
+          height="100%"
+          aria-label="Big Data Logo"
+        >
+          Your browser does not support SVGs.
+        </object>
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Hero;
