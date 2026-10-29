@@ -7,7 +7,7 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "export": "next export",
-    "deploy": "gh-pages -d out -t -u \"Khalid Elgamous <khalidelgamous1@gmail.com>\"",
+    "deploy": "gh-pages -d out",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
