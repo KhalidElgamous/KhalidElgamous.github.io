@@ -35,7 +35,7 @@ jobs:
 
       - name: Build
         run: npm run build      # runs `next build`, output goes to ./out
-      - run: npm run export
+      # - run: npm run export
         env:
           CI: true
           DEPLOY_TARGET: gh-pages
