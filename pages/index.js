@@ -1,29 +1,35 @@
-import data from "../data/portfolio.json";
+"use client";
 
-import GlowOrbs from "../components/layout/GlowOrbs";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import { useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { detectLocale, languages } from "../lib/i18n";
 
-import Hero from "../components/sections/Hero";
-import About from "../components/sections/About";
-import Services from "../components/sections/Services";
-import Portfolio from "../components/sections/Portfolio";
-import Contact from "../components/sections/Contact";
-
+// "/" has no content of its own: it sends the visitor to the language they prefer.
+// GitHub Pages cannot redirect on the server, so this happens in the browser.
+// The links stay visible as a fallback (JavaScript off, or while redirecting).
 const Page = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace(`/${detectLocale()}`);
+  }, [router]);
+
   return (
-    <>
-      <GlowOrbs orbs={data.orbs} />
-      <Header brand={data.site.brand} nav={data.nav} />
-
-      <Hero hero={data.hero} resume={data.resume} />
-      <About about={data.about} />
-      <Services services={data.services} />
-      <Portfolio portfolio={data.portfolio} />
-      <Contact contact={data.contact} />
-
-      <Footer copyright={data.footer.copyright} backToTop={data.footer.backToTop} />
-    </>
+    <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-[5%] text-center">
+      <div className="flex flex-wrap justify-center gap-4">
+        {languages.map(({ code, name }) => (
+          <Link
+            key={code}
+            href={`/${code}`}
+            lang={code}
+            className="rounded-xl border border-line bg-white/[0.03] px-6 py-3 text-[15px] font-semibold text-fg transition-colors duration-300 hover:border-accent"
+          >
+            {name}
+          </Link>
+        ))}
+      </div>
+    </main>
   );
 };
 

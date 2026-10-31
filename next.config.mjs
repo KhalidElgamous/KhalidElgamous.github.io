@@ -12,6 +12,7 @@ const nextConfig = {
   images: { unoptimized: true }, // required for next/image with static export
   trailingSlash: true,           // optional, avoids 404s on page refresh
   // assetPrefix: ghPages ? '/KhalidElgamous.github.io/' : '',
+  // allowedDevOrigins: ['127.0.0.1'],
 };
 
 export default nextConfig;

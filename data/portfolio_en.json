@@ -1,0 +1,382 @@
+{
+  "site": {
+    "brand": "Portfolio",
+    "owner": "Khalid EL GAMOUS",
+    "profession": "Senior Data Engineer",
+    "languageLabel": "Language",
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "meta": {
+    "title": "Khalid EL GAMOUS — Senior Data Engineer",
+    "description": "Results-driven Data Engineer, expert in designing scalable data acquisition architectures and distributed processing pipelines."
+  },
+  "resume": {
+    "file": "/resume.pdf",
+    "downloadName": "Khalid-Elgamous-Resume.pdf",
+    "label": "Export Resume (PDF)",
+    "icon": "fa-cloud-download-alt"
+  },
+  "orbs": [
+    {
+      "top": "10%",
+      "left": "-10%"
+    },
+    {
+      "top": "50%",
+      "right": "-10%"
+    }
+  ],
+  "nav": [
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "Experience",
+      "href": "#about"
+    },
+    {
+      "label": "Pillars",
+      "href": "#services"
+    },
+    {
+      "label": "Cases",
+      "href": "#portfolio"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "[ Senior Data Engineer ]",
+    "name": "Khalid EL GAMOUS",
+    "summary": "Results-driven Data Engineer, expert in designing scalable data acquisition architectures and distributed processing pipelines.",
+    "primaryAction": {
+      "label": "Initiate Contact",
+      "href": "#contact",
+      "icon": "fa-arrow-right"
+    },
+    "displayIcon": "fa-database"
+  },
+  "about": {
+    "tag": "01 // Background",
+    "heading": {
+      "lead": "Engineering Resilient",
+      "highlight": "Data Systems"
+    },
+    "text": "Results-driven Data Engineer, expert in designing scalable data acquisition architectures and distributed processing pipelines. Specialist in complex web automation, anti-detection engineering and ETL/ELT orchestration. Proven mastery of Medallion (Lakehouse) architectures and of integrating local AI/NLP models for data enrichment. Demonstrated ability to deploy robust containerized solutions that turn raw, unstructured data into strategic intelligence.",
+    "metrics": [
+      {
+        "value": "6",
+        "label": "Professional Projects"
+      },
+      {
+        "value": "3",
+        "label": "Companies"
+      },
+      {
+        "value": "7",
+        "label": "Skill Domains"
+      },
+      {
+        "value": "2",
+        "label": "Certifications"
+      }
+    ]
+  },
+  "services": {
+    "tag": "02 // Core Capabilities",
+    "heading": {
+      "lead": "Core Functional",
+      "highlight": "Expertise"
+    },
+    "items": [
+      {
+        "icon": "fa-project-diagram",
+        "title": "Data Engineering & Orchestration",
+        "description": "Apache Spark, Airflow, Celery, Kafka, Hadoop, DeltaLake, Iceberg, Parquet."
+      },
+      {
+        "icon": "fa-spider",
+        "title": "Advanced Data Acquisition",
+        "description": "Scrapy (Distributed), Playwright, Selenium, MitmProxy, Proxy Chaining."
+      },
+      {
+        "icon": "fa-code",
+        "title": "Programming Languages",
+        "description": "Python (Advanced), Scala, Go, Java, Bash, SQL, JavaScript"
+      },
+      {
+        "icon": "fa-brain",
+        "title": "AI & Natural Language Processing (NLP)",
+        "description": "spaCy, Scikit-learn, MLflow, LLM Prompt Engineering, NLP Pipelines"
+      },
+      {
+        "icon": "fa-database",
+        "title": "Databases & Storage",
+        "description": "PostgreSQL, MongoDB, Redis, Elasticsearch, Delta Lake, Oracle, MySQL"
+      },
+      {
+        "icon": "fa-server",
+        "title": "Infrastructure & DevOps",
+        "description": "Docker, Ansible, CI/CD (GitHub Actions, GitLab CI), Linux (Fedora, RHEL, Ubuntu)"
+      },
+      {
+        "icon": "fa-laptop-code",
+        "title": "Full-Stack Development",
+        "description": "Django REST Framework, React (Redux Toolkit), Flask, Jinja2"
+      }
+    ]
+  },
+  "portfolio": {
+    "tag": "03 // Production Implementations",
+    "heading": {
+      "lead": "Selected",
+      "highlight": "Projects"
+    },
+    "projects": [
+      {
+        "title": "Data Lakehouse & Automated Sending of AI-Generated Emails",
+        "description": "End-to-end system architecture for data ingestion, and implementation of a complete automated email sending system with AI-generated content and distributed orchestration.",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "Data Lakehouse & Automated Sending of AI-Generated Emails",
+        "tags": [
+          "Apache Spark",
+          "gRPC",
+          "Celery",
+          "spaCy",
+          "Playwright",
+          "Ansible",
+          "Django REST Framework",
+          "React",
+          "PostgreSQL",
+          "Docker"
+        ],
+        "company": "ADSGLORY",
+        "location": "Tangier",
+        "period": [
+          "2024-11",
+          "2025-05"
+        ],
+        "tasks": [
+          "Designed a multi-stage ingestion pipeline to extract unstructured data (Gmail/RSS) into a Delta Lake storage layer.",
+          "Implemented distributed NLP preprocessing (lemmatization and NER) and LLM content generation (text, HTML), then updated the enriched data.",
+          "Engineered a large-scale sending system using Celery and Playwright, simulating human behavior to bypass automated filters.",
+          "Deployed monitoring tasks to ensure pipeline health, delivery reliability and error handling under Docker."
+        ]
+      },
+      {
+        "title": "ML-Based Web Form Detection for Email Warm-up",
+        "description": "Developed a website analysis system that automatically identifies the forms useful for email warm-up (e.g. newsletter, forgotten password, contact).",
+        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "ML-Based Web Form Detection for Email Warm-up",
+        "tags": [
+          "Python",
+          "Scikit-learn",
+          "MLflow",
+          "Django REST Framework",
+          "Docker",
+          "PostgreSQL"
+        ],
+        "company": "ADSGLORY",
+        "location": "Tangier",
+        "period": [
+          "2024-07",
+          "2024-11"
+        ],
+        "tasks": [
+          "Automated extraction of HTML forms and CSS selectors to build a proprietary dataset of interactions.",
+          "Trained a supervised Machine Learning model (TF-IDF + Multinomial Naive Bayes) to accurately classify form types.",
+          "Used MLflow for experiment tracking and model versioning, ensuring reproducible results.",
+          "Exposed predictions through a REST API for smooth integration with downstream automation tools."
+        ]
+      },
+      {
+        "title": "Distributed Multi-Source Data Aggregation Pipeline",
+        "description": "Designed a high-throughput ETL pipeline to aggregate and validate data from MongoDB, Elasticsearch and flat files.",
+        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "Distributed Multi-Source Data Aggregation Pipeline",
+        "tags": [
+          "Apache Spark",
+          "MongoDB",
+          "Elasticsearch",
+          "Pandas",
+          "Django REST Framework",
+          "Celery"
+        ],
+        "company": "ADSGLORY",
+        "location": "Tangier",
+        "period": [
+          "2023-10",
+          "2024-01"
+        ],
+        "tasks": [
+          "Optimized the insertion logic for MongoDB and Elasticsearch to handle large-scale aggregation of unique records.",
+          "Implemented parallel processing for efficient data extraction and consolidated reporting.",
+          "Developed automated cleaning and validation layers to guarantee data quality before consumption."
+        ]
+      },
+      {
+        "title": "Network-Level Data Interception & Analysis",
+        "description": "Engineered a sophisticated data collection system using MitmProxy to intercept and analyze encrypted network traffic.",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "Network-Level Data Interception & Analysis",
+        "tags": [
+          "Python",
+          "MitmProxy",
+          "Redis",
+          "Docker",
+          "PostgreSQL"
+        ],
+        "company": "IMPERIUM",
+        "location": "Sidi Yahya, Kénitra",
+        "period": [
+          "2023-10",
+          "2023-03"
+        ],
+        "tasks": [
+          "Configured and deployed MitmProxy on Raspberry Pi and Docker environments for transparent traffic interception.",
+          "Developed custom Python add-ons to parse HTTP/S flows in real time and extract granular social and advertising metrics.",
+          "Optimized data persistence with a two-layer strategy: Redis for fast ingestion and PostgreSQL for relational analysis.",
+          "Collaborated on the architectural design to ensure system scalability and data integrity."
+        ]
+      },
+      {
+        "title": "Social Intelligence Desktop Application",
+        "description": "Developed a cross-platform desktop application for real-time social data extraction and manual annotation.",
+        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "Social Intelligence Desktop Application",
+        "tags": [
+          "Python",
+          "Kivy",
+          "Selenium",
+          "SQLite/PostgreSQL"
+        ],
+        "company": "IMPERIUM",
+        "location": "Sidi Yahya, Kénitra",
+        "period": [
+          "",
+          ""
+        ],
+        "tasks": [
+          "Integrated Selenium with a Kivy graphical interface to allow real-time monitoring of automated scrolling and capture.",
+          "Built manual annotation features for sentiment analysis, sector classification and geographic tagging.",
+          "Implemented a local database verification layer to avoid duplicates and keep the dataset clean."
+        ]
+      },
+      {
+        "title": "Data Modernization & Migration (RDBMS to NoSQL)",
+        "description": "Led a MySQL to MongoDB migration project to improve the scalability of an enterprise GPS tracking system.",
+        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80",
+        "imageAlt": "Data Modernization & Migration (RDBMS to NoSQL)",
+        "tags": [
+          "Java",
+          "Python",
+          "MySQL",
+          "MongoDB"
+        ],
+        "company": "EMS",
+        "location": "Kénitra",
+        "period": [
+          "",
+          ""
+        ],
+        "tasks": [
+          "Analyzed the existing relational schemas to design an optimized NoSQL document model.",
+          "Performed the ETL on historical CSV archives, ensuring data consistency and integrity during the transition.",
+          "Integrated the new data layer into the main application and generated validation reports."
+        ]
+      }
+    ]
+  },
+  "education": [
+    {
+      "date_range": "2017 – 2019",
+      "place": "Université Ibn Tofail - Kénitra",
+      "title": "Specialized Master's in Big Data & Cloud Computing",
+      "description": "In-depth training in distributed systems, cloud architecture and large-scale data processing."
+    },
+    {
+      "date_range": "2012 – 2016",
+      "place": "Université Ibn Tofail - Kénitra",
+      "title": "Bachelor's Degree in Computer Science (Licence d'Études Fondamentales)",
+      "description": "Final-year project: design and development of a school management application in Java EE."
+    },
+    {
+      "date_range": "2011",
+      "place": "Lycée Moussa Ben Nousair - Khemisset",
+      "title": "Baccalaureate (Mathematics, Section A)",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "description": "Business Intelligence Analyst – IBM Mastery Award for Students.",
+      "date": "July 10, 2018"
+    },
+    {
+      "description": "Contributing communication activities that led to the success of the International Conference of Computing for Engineering and Sciences held in Kenitra, Morocco.",
+      "date": "July 04, 2019"
+    }
+  ],
+  "contact": {
+    "tag": "04 // Connection Gateway",
+    "heading": {
+      "lead": "Start A",
+      "highlight": "Project Engagement"
+    },
+    "form": {
+      "gridFields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Your Name"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Professional Email Address"
+        }
+      ],
+      "subjectField": {
+        "name": "subject",
+        "type": "text",
+        "placeholder": "Project or Engagement Purpose"
+      },
+      "messageField": {
+        "name": "message",
+        "placeholder": "Describe the structural data constraints or enterprise objectives..."
+      },
+      "submit": {
+        "label": "Dispatch Secure Transmission",
+        "icon": "fa-paper-plane"
+      },
+      "fromName": "Portfolio Contact Form",
+      "status": {
+        "sending": "Sending...",
+        "success": "Message sent. Thank you, I'll get back to you soon.",
+        "error": "Something went wrong. Please try again, or email me directly.",
+        "captcha": "Please complete the captcha first."
+      }
+    },
+    "details": {
+      "email": "khalidelgamous1@gmail.com",
+      "phone": "+212 611-458341",
+      "linkedin": "https://www.linkedin.com/in/khalid-elgamous",
+      "github": "https://github.com/KhalidElgamous",
+      "address": "Kénitra, Morocco"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 K.ELGAMOUS. Built for high-scale pipeline performance.",
+    "backToTop": {
+      "label": "Return To Top",
+      "href": "#home",
+      "icon": "fa-arrow-up"
+    }
+  }
+}

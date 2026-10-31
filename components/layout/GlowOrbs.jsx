@@ -1,4 +1,4 @@
-// Decorative background orbs. Positions come from the "orbs" array in data/portfolio.json.
+// Decorative background orbs. Positions come from the "orbs" array in the data/portfolio_*.json files.
 // The wrapper clips them so an orb placed past the screen edge never causes sideways scrolling.
 const GlowOrbs = ({ orbs }) => (
   <div

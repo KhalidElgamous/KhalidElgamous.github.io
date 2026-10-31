@@ -41,7 +41,7 @@ const Hero = ({ hero, resume }) => (
       <div className="flex h-[320px] w-[260px] items-center justify-center overflow-hidden rounded-3xl border border-line bg-[image:linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] p-5 shadow-[0_30px_60px_rgba(0,0,0,0.4)] md:h-[352px] md:w-[288px] xl:h-[440px] xl:w-[360px]">
         <object
           type="image/svg+xml"
-          data="bigdata.svg"
+          data="/bigdata.svg"
           width="100%"
           height="100%"
           aria-label="Big Data Logo"

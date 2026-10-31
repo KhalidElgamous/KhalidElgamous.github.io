@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 
 import './globals.css';
 
-function Website({ Component, pageProps }) {
+function Portfolio({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
@@ -10,4 +10,4 @@ function Website({ Component, pageProps }) {
   )
 }
 
-export default Website;
+export default Portfolio;
