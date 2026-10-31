@@ -142,7 +142,7 @@
       {
         "title": "Data Lakehouse & Automated Sending of AI-Generated Emails",
         "description": "End-to-end system architecture for data ingestion, and implementation of a complete automated email sending system with AI-generated content and distributed orchestration.",
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80",
+        "image": "https://plus.unsplash.com/premium_photo-1725907643701-9ba38affe7bb?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "Data Lakehouse & Automated Sending of AI-Generated Emails",
         "tags": [
           "Apache Spark",
@@ -172,7 +172,7 @@
       {
         "title": "ML-Based Web Form Detection for Email Warm-up",
         "description": "Developed a website analysis system that automatically identifies the forms useful for email warm-up (e.g. newsletter, forgotten password, contact).",
-        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=500&q=80",
+        "image": "https://plus.unsplash.com/premium_photo-1714618831065-8e8dadd8d3df?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "ML-Based Web Form Detection for Email Warm-up",
         "tags": [
           "Python",
@@ -198,7 +198,7 @@
       {
         "title": "Distributed Multi-Source Data Aggregation Pipeline",
         "description": "Designed a high-throughput ETL pipeline to aggregate and validate data from MongoDB, Elasticsearch and flat files.",
-        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80",
+        "image": "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "Distributed Multi-Source Data Aggregation Pipeline",
         "tags": [
           "Apache Spark",
@@ -223,7 +223,7 @@
       {
         "title": "Network-Level Data Interception & Analysis",
         "description": "Engineered a sophisticated data collection system using MitmProxy to intercept and analyze encrypted network traffic.",
-        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80",
+        "image": "https://plus.unsplash.com/premium_photo-1661876775049-d56ae3c0a677?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "Network-Level Data Interception & Analysis",
         "tags": [
           "Python",
@@ -248,7 +248,7 @@
       {
         "title": "Social Intelligence Desktop Application",
         "description": "Developed a cross-platform desktop application for real-time social data extraction and manual annotation.",
-        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=500&q=80",
+        "image": "https://images.unsplash.com/photo-1584291527908-033f4d6542c8?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "Social Intelligence Desktop Application",
         "tags": [
           "Python",
@@ -271,7 +271,7 @@
       {
         "title": "Data Modernization & Migration (RDBMS to NoSQL)",
         "description": "Led a MySQL to MongoDB migration project to improve the scalability of an enterprise GPS tracking system.",
-        "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80",
+        "image": "https://plus.unsplash.com/premium_photo-1751633582248-b6ef1fbda25b?auto=format&fit=crop&w=500&q=80",
         "imageAlt": "Data Modernization & Migration (RDBMS to NoSQL)",
         "tags": [
           "Java",
