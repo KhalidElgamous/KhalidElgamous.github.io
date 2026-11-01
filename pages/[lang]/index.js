@@ -22,10 +22,16 @@ export async function generateMetadata({ params }) {
   return { title: meta.title, description: meta.description };
 }
 
-const Page = ({ lang = "en" }) => {
-  // const { lang } = await params;
-  const data = getData(lang);
+export const getStaticPaths = () => ({
+  paths: locales.map((lang) => ({ params: { lang } })),
+  fallback: false,
+});
 
+export const getStaticProps = ({ params }) => ({
+  props: { lang: params.lang, data: getData(params.lang) },
+});
+
+const Page = ({ lang, data }) => {
   return (
     <>
       <GlowOrbs orbs={data.orbs} />
